@@ -1,0 +1,9 @@
+{
+  "name": "Job Planner",
+  "brief": "A planner for a small trade business. Office staff and crew leads see today's jobs, add new jobs and move each job through Planned, In progress and Done. The app also has a flying bear page for fun.",
+  "pages": [
+    {"name": "Home", "path": "/"},
+    {"name": "Jobs", "path": "/#/jobs"},
+    {"name": "Flying bear", "path": "/#/bear"}
+  ]
+}

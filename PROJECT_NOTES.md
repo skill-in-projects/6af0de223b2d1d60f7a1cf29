@@ -6,6 +6,7 @@ A planner for a small trade business. Office staff and crew leads see today's jo
 ## Main screens
 - Home (/): greeting, counts for today, this week and finished jobs, and today's job list.
 - Jobs (/#/jobs): add a job form and the full job list. Pressing a job's status moves it to the next status.
+- Flying bear (/#/bear): an animated drawing of a brown bear with flapping wings. Added on the user's request.
 
 ## API endpoints
 None yet. Data comes from sample data in src/data.js.

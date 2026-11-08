@@ -24,3 +24,10 @@ button.ghost { background: #e5e7eb; color: #1f2937; }
 input, select { font: inherit; padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 6px; width: 100%; }
 .form { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; align-items: end; margin-bottom: 20px; }
 .notice { font-size: 14px; color: #92400e; background: #fef3c7; padding: 10px 14px; border-radius: 8px; margin-bottom: 16px; }
+.bear-stage { display: flex; justify-content: center; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 1px 3px #0001; }
+.bear { width: 100%; max-width: 420px; animation: bear-bob 2.4s ease-in-out infinite; }
+.bear-wing { transform-box: fill-box; transform-origin: 90% 90%; animation: bear-flap .6s ease-in-out infinite alternate; }
+.bear-wing-front { animation-delay: .1s; }
+@keyframes bear-bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+@keyframes bear-flap { from { transform: rotate(-10deg); } to { transform: rotate(12deg); } }
+@media (prefers-reduced-motion: reduce) { .bear, .bear-wing { animation: none; } }
